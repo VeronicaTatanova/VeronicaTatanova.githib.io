@@ -14,7 +14,6 @@ canvas.addEventListener(`click`, moveView)
 
 function moveView(event)
 {
-    const [i, j] = clickToTile(event.offsetX, event.offsetY)
+    const  [i, j] = clickToTile(event.offsetX, event.offsetY)
     s1 = move(s1, i, j)
-    new GameView(s1)
 }
